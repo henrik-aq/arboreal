@@ -1,0 +1,239 @@
+body{
+    font-family: "Barlow", sans-serif;
+    margin: 0.2vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #EBEBE9; 
+}
+
+/* Definerar storlek på header-delen som innehåller meny och logga */
+.header{
+    height: 10vh;
+    width: 100%;
+    background-color: #C0CEB2;
+    display: flex;
+    align-items: center;
+}
+
+/* Gör att loggan blir mindre när storlek på skärm ändas */
+.logo-img {
+    height: 7vh;
+}
+
+/* Lägger menylänkarna till höger och ger de en högermarginal */
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 1.8vw;
+}
+
+/* Stylar länkarna och ger font-storlek.
+calc(15px + 0.8vw) betyder att texten skalas till
+view width vilket gör att de blir större men
+aldrig mindre än 15px*/
+.navbar a {
+    padding-right: 1em;
+    color: white;
+    text-decoration: none;
+    font-size: calc(15px + 0.8vw);
+}
+
+/* Unline till menylänkarna när man hovrar över texten*/
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Wrapper som täcker hela innehållet i main*/
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Lägger till bakgrunden till första delen.
+min-height: 65vh gör att "flexboxen" tar upp minst 65% av
+webbläsarens höjd, men om innehållet inte får plats när fönstret förminskas
+och trycks ihop så får den växa.*/
+.title-img {
+    display: flex;
+    width: 100%;
+    min-height: 65vh;
+    background-image: url(firns2.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;   
+}
+
+/* Stylar texten som ligger över bilden */
+.tagline {
+    color: #49654C;
+    background-color: rgba(255,255,255,0.85);
+    letter-spacing: 0.15vw;
+    text-align: center;
+    font-size: calc(15px + 0.8vw);
+    margin: 0.2vw;
+    padding: 0.3vw;
+}
+
+/* Första avdelningen "themes"*/
+.themes{
+    flex: 1;
+    width: 100%;
+    min-height: 65vh;
+    background-color: #C0CEB2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Stylar p-elementen i "themes" */
+.themes p{
+    color: #49654C;
+    font-size: calc(13px + 0.6vw);
+}
+
+/* Stylar h1-elementen i "themes" */
+.themes h2{
+    font-size: calc(15px + 0.8vw);
+    color: #49654C;
+    border-bottom: solid;
+    border-color: #C0CEB2;
+}
+
+/* Stylar samtliga vita "rutor" i varje avdelning.
+Ger rundade hörn, bestämmer hur själva innehållet sen ska ligga (column).
+Alphakanalen ger lite genomskinlighet (0.65)*/
+.content {
+    display: flex;
+    flex: 1;
+    margin: 1vh;
+    margin: 1vw;
+    background-color: rgba(255,255,255,0.65);
+    border-radius: 0.5em;
+    flex-direction: column;
+    padding: 1vh;
+}
+
+
+.pricing{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    min-height: 65vh;
+    background-color: #8AA989;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pricing h2{
+    font-size: calc(15px + 0.8vw);
+    color: #49654C;
+    border-bottom: solid;
+    border-color: #8AA989;
+}
+
+.pricing p {
+    color: #49654C;
+    font-size: calc(13px + 0.6vw);
+}
+
+/* Stylar prisuppgiften */
+.pricing-btn {
+    background-color: #EBEBE9;
+    padding: 0.1vw;
+    text-align: center;
+}
+
+.contact{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    min-height: 65vh;
+    background-color: #49654C;
+    display: flex;
+}
+
+.contact h2{
+    font-size: calc(15px + 0.8vw);
+    color: #49654C;
+    border-bottom: solid;
+    border-color: #49654C;
+}
+
+.contact p{
+    color: #49654C;
+    font-size: calc(13px + 0.6vw);
+    padding: 0.1vw;
+    margin-bottom: 0.1vw;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Stylar label-texten i formuläret */
+.contact-form label {
+    padding-bottom: 0.3vw;
+    padding-top: 0.4vw;
+    color: #49654C;
+    font-size: calc(13px + 0.6vw);
+}
+
+/* Stylar input-fälten */
+.contact-form input {
+    height: calc(13px + 0.6vw);
+    font-size: calc(12px + 0.4vw);
+    background-color: #EBEBE9;
+    border: solid 1px;
+    border-color: black;
+}
+
+/* Stylar textfältet som behövde lite mer höjd */
+.contact-form textarea {
+    font-size: calc(12px + 0.4vw);
+    height: calc(36px + 0.6vw);
+    background-color: #EBEBE9;
+    border: solid 1px;
+    border-color: black;   
+}
+
+/* Funkade dåligt att styla "send"-knappen med bara input,
+så fick ge den egen styling.*/
+.contact-form input[type="submit"] {
+    margin-top: 0.4vh;
+    height: calc(16px + 0.6vw);
+}
+
+/* Ändrar höjd och bredd till Google-kartan */
+.content iframe {
+    height: 60%;
+    width: 100%;
+    border: 0; 
+}
+
+/* Säger till twitter och facebook-loggorna att ligga brevid varandra. */
+.social-logo{
+    flex-direction: row;
+}
+
+.social-logo img {
+    width: 48px;
+    height: 48px;
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1{
+    font-size: calc(15px + 0.8vw);
+    font-style: italic;
+    color: #49654C;
+}
