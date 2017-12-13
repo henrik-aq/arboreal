@@ -1,24 +1,26 @@
 Arboreal - Henrik Andersson Qvarfordt
 
-Utgångspunkten när jag startade denna uppgift var att lära mig mer om flexbox. I och med att sidan inte skulle innhålla så mycket innehåll
-tyckte jag att det var passande att göra en single-page lösning.
-Började med att lägga upp olikfärgade "boxar"  för att se hur de interagerade med varandra. När jag var nöjd började jag med att styla sidan.
-Den absolut största tiden har jag lagt på flexbox så "designen" fick inte lika hög prioritet, vilket kanske syns.
-Hittade en färgkarta på nätet (http://bit.ly/2ADeQ7E) som jag utgick ifrån. Det var svårt att få texten läsbar mot de olika färgerna så
-beslutade att ha en semi-tranparent vit bakgrund till all text. Tyvärr gör det att sidan blir lite väl "fyrkantig" och "boxig", men läsbarheten tyckte jag
-var viktigare och jag fick en bra övning i flexbox.
-Fonten hittade jag på Google Fonts. Den är utan serifer vilket även det ökar läsbarheten. 
-Tyckte det var viktigt att från början försöka få sidan att passa i en mindre skärm, så alla element är stylade med relativa enheter som vh, vw, em osv.
-Det är inte perfekt ännu men det fungerar delvis. Lyckades få texten att skala också med hjälp av calc(px + vw) men jag vet inte riktigt om det 
-är "best practice".
-Lade till kommentarer till min CSS som närmare förklarar de olika delarna.
+UtgÃ¥ngspunkten nÃ¤r jag startade denna uppgift var att lÃ¤ra mig mer om flexbox. I och med att sidan inte skulle innhÃ¥lla sÃ¥ mycket innehÃ¥ll
+tyckte jag att det var passande att gÃ¶ra en single-page lÃ¶sning.
+BÃ¶rjade med att lÃ¤gga upp olikfÃ¤rgade "boxar"  fÃ¶r att se hur de interagerade med varandra. NÃ¤r jag var nÃ¶jd bÃ¶rjade jag med att styla sidan.
+Den absolut stÃ¶rsta tiden har jag lagt pÃ¥ flexbox sÃ¥ "designen" fick inte lika hÃ¶g prioritet, vilket kanske syns.
+Hittade en fÃ¤rgkarta pÃ¥ nÃ¤tet (http://bit.ly/2ADeQ7E) som jag utgick ifrÃ¥n. Det var svÃ¥rt att fÃ¥ texten lÃ¤sbar mot de olika fÃ¤rgerna sÃ¥
+beslutade att ha en semi-tranparent vit bakgrund till all text. TyvÃ¤rr gÃ¶r det att sidan blir lite vÃ¤l "fyrkantig" och "boxig", men lÃ¤sbarheten tyckte jag
+var viktigare och jag fick en bra Ã¶vning i flexbox.
+Fonten hittade jag pÃ¥ Google Fonts. Den Ã¤r utan serifer vilket Ã¤ven det Ã¶kar lÃ¤sbarheten. 
+Tyckte det var viktigt att frÃ¥n bÃ¶rjan fÃ¶rsÃ¶ka fÃ¥ sidan att passa i en mindre skÃ¤rm, sÃ¥ alla element Ã¤r stylade med relativa enheter som vh, vw, em osv.
+Det Ã¤r inte perfekt Ã¤nnu men det fungerar delvis. Lyckades fÃ¥ texten att skala ocksÃ¥ med hjÃ¤lp av calc(px + vw) men jag vet inte riktigt om det 
+Ã¤r "best practice".
+Lade till kommentarer till min CSS som nÃ¤rmare fÃ¶rklarar de olika delarna.
 
 Validerade HTML och CSS och fick inga fel.
----------------------------------------------------------------------------------------------
+
+
 "Document checking completed. No errors or warnings to show."
----------------------------------------------------------------------------------------------
-"W3C CSS-valideringsresultat för style.css (CSS nivå 3)
+
+
+"W3C CSS-valideringsresultat fÃ¶r style.css (CSS nivÃ¥ 3)
 
 Gratulerar! Inga fel har hittats"
----------------------------------------------------------------------------------------------
+
 
