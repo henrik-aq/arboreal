@@ -23,9 +23,9 @@ Validerade HTML och CSS och fick inga fel.
 
 Gratulerar! Inga fel har hittats"
 
-Feedback från Victoria:
+Feedback från Victoria.
 
-Uppnådda krav:
+Uppnådda krav.
 1 Sidan använder sig av en fler-kolumns-layout.
 2 Du använder dig av semantisk HTML för att strukturera upp ditt innehåll.
 3 Du använder dig av _class_ och  <tag>  för att styla din sida.
