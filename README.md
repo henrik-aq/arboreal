@@ -1,73 +1,76 @@
 Arboreal - Henrik Andersson Qvarfordt
 
-Utgångspunkten när jag startade denna uppgift var att lära mig mer om flexbox. I och med att sidan inte skulle innhålla så mycket innehåll
-tyckte jag att det var passande att göra en single-page lösning.
-Började med att lägga upp olikfärgade "boxar"  för att se hur de interagerade med varandra. När jag var nöjd började jag med att styla sidan.
-Den absolut största tiden har jag lagt på flexbox så "designen" fick inte lika hög prioritet, vilket kanske syns.
-Hittade en färgkarta på nätet (http://bit.ly/2ADeQ7E) som jag utgick ifrån. Det var svårt att få texten läsbar mot de olika färgerna så
-beslutade att ha en semi-tranparent vit bakgrund till all text. Tyvärr gör det att sidan blir lite väl "fyrkantig" och "boxig", men läsbarheten tyckte jag
-var viktigare och jag fick en bra övning i flexbox.
-Fonten hittade jag på Google Fonts. Den är utan serifer vilket även det ökar läsbarheten. 
-Tyckte det var viktigt att från början försöka få sidan att passa i en mindre skärm, så alla element är stylade med relativa enheter som vh, vw, em osv.
-Det är inte perfekt ännu men det fungerar delvis. Lyckades få texten att skala också med hjälp av calc(px + vw) men jag vet inte riktigt om det 
-är "best practice".
-Lade till kommentarer till min CSS som närmare förklarar de olika delarna.
+UtgÃ¥ngspunkten nÃ¤r jag startade denna uppgift var att lÃ¤ra mig mer om flexbox. I och med att sidan inte skulle innhÃ¥lla sÃ¥ mycket innehÃ¥ll
+tyckte jag att det var passande att gÃ¶ra en single-page lÃ¶sning.
+BÃ¶rjade med att lÃ¤gga upp olikfÃ¤rgade "boxar"  fÃ¶r att se hur de interagerade med varandra. NÃ¤r jag var nÃ¶jd bÃ¶rjade jag med att styla sidan.
+Den absolut stÃ¶rsta tiden har jag lagt pÃ¥ flexbox sÃ¥ "designen" fick inte lika hÃ¶g prioritet, vilket kanske syns.
+Hittade en fÃ¤rgkarta pÃ¥ nÃ¤tet (http://bit.ly/2ADeQ7E) som jag utgick ifrÃ¥n. Det var svÃ¥rt att fÃ¥ texten lÃ¤sbar mot de olika fÃ¤rgerna sÃ¥
+beslutade att ha en semi-tranparent vit bakgrund till all text. TyvÃ¤rr gÃ¶r det att sidan blir lite vÃ¤l "fyrkantig" och "boxig", men lÃ¤sbarheten tyckte jag
+var viktigare och jag fick en bra Ã¶vning i flexbox.
+Fonten hittade jag pÃ¥ Google Fonts. Den Ã¤r utan serifer vilket Ã¤ven det Ã¶kar lÃ¤sbarheten. 
+Tyckte det var viktigt att frÃ¥n bÃ¶rjan fÃ¶rsÃ¶ka fÃ¥ sidan att passa i en mindre skÃ¤rm, sÃ¥ alla element Ã¤r stylade med relativa enheter som vh, vw, em osv.
+Det Ã¤r inte perfekt Ã¤nnu men det fungerar delvis. Lyckades fÃ¥ texten att skala ocksÃ¥ med hjÃ¤lp av calc(px + vw) men jag vet inte riktigt om det 
+Ã¤r "best practice".
+Lade till kommentarer till min CSS som nÃ¤rmare fÃ¶rklarar de olika delarna.
 
-Validerade HTML och CSS och fick inga fel.
+Valde brytpunkt i media queries vid 768px som verkar vara vanligt vid anvÃ¤ndande av en iPad. Tanken med hela designen frÃ¥n bÃ¶rjan var som sagt att inte behÃ¶va massa media queries utan att behÃ¶va Ã¤ndra sÃ¥ lite som mÃ¶jligt.
+
+<br>
+<b>Validerade HTML och CSS och fick inga fel.</b>
 
 
 "Document checking completed. No errors or warnings to show."
 
 
-"W3C CSS-valideringsresultat för style.css (CSS nivå 3)
+"W3C CSS-valideringsresultat fÃ¶r style.css (CSS nivÃ¥ 3)
 
 Gratulerar! Inga fel har hittats"
+<br>
+<br>
+<br>
+Feedback frÃ¥n Victoria:
 
-Feedback från Victoria.
-  
-Feedback: 
+- <b>Du borde frÃ¤mst anvÃ¤nda dig av relativa mÃ¥ttenheter: % och rem/em istÃ¤llet px-vÃ¤rden. HÃ¤r finns en bra lÃ¤nk: 
+https://www.w3schools.com/tags/ref_pxtoemconversion.asp</b>
+	- AnvÃ¤nder mig frÃ¤mst av relativa mÃ¥ttenheter. Enda gÃ¥ngen px anvÃ¤nds Ã¤r fÃ¶r att styra fontstorlek men dÃ¥ anvÃ¤nds den tillsammans med vw i calc(px + vw) fÃ¶r att styra storlek pÃ¥ font nÃ¤r skÃ¤rmstorlek Ã¤ndras.
 
-Du borde främst använda dig av relativa måttenheter: % och rem/em istället px-värden. Här finns en bra länk: 
-https://www.w3schools.com/tags/ref_pxtoemconversion.asp 
-Använder mig främst av relativa måttenheter. Enda gången px används är för att styra fontstorlek men då används den tillsammans med vw i calc(px + vw) för att styra storlek på font när skärmstorlek ändras.
+- <b>Det skulle vara bra om du lade till rubrikerna Home och About i sjÃ¤lva menyn sÃ¥ man kan lÃ¤nka till de rubrikerna pÃ¥ sidan.</b>
+	- Har valt att inte gÃ¶ra det dÃ¥ menyn inte fÃ¶ljer med nÃ¤r man skrollar pÃ¥ sidan, alltsÃ¥ behÃ¶vs inte Home. About tycker jag Ã¤r typ samma som Home, dvs â€fÃ¶rstasidanâ€.
 
-Det skulle vara bra om du lade till rubrikerna Home och About i själva menyn så man kan länka till de rubrikerna på sidan.
-Har valt att inte göra det då menyn inte följer med när man skrollar på sidan, alltså behövs inte Home. About tycker jag är typ samma som Home, dvs ”förstasidan”.
+- <b>Det skulle vara bra att ha rubriker pÃ¥ de olika delarna av sidan som menyn leder till t.ex. About, Themes, Pricing och Contact. Namn pÃ¥ de olika rubrikerna kan lÃ¤ggas in i taggar av typen h2.</b>
+	- Detta hÃ¶ll jag med om och har fixat! 
 
-Det skulle vara bra att ha rubriker på de olika delarna av sidan som menyn leder till.T.ex. About, Themes, Pricing och Contact. Namn på de olika rubrikerna kan läggas in i taggar av typen <h2>.
-Detta höll jag med om och har fixat! 
+- <b>Det saknas namn pÃ¥ fÃ¶retaget. Man kan lÃ¤gga in namnet i header med en tagg av typen h1.</b>
+	- Det var ett medvetet val. FÃ¶retagsnamnet nÃ¤mns 3 gÃ¥nger Ã¶ver â€hero-bildenâ€ pÃ¥ fÃ¶rstasidan vilket jag tycker rÃ¤cker gott och vÃ¤l.
 
-Det saknas namn på företaget. Man kan lägga in namnet i <header> med en tagg av typen <h1>. 
-Det var ett medvetet val. Företagsnamnet nämns 3 gånger över ”hero-bilden” på förstasidan vilket jag tycker räcker gott och väl.
+- <b>Slogan borde flyttas frÃ¥n footer till innehÃ¥ller under rubriken About istÃ¤llet. Du bÃ¶r inte anvÃ¤nda footer till slogan. Som alternativ kan du istÃ¤llet anvÃ¤nda p tillsammans med strong eller endast h3.</b>
+	- Gillar att slogan ligger lÃ¤ngst ner i footern. KÃ¤ndes onÃ¶digt att upprepa fÃ¶retagets adress dÃ¤r eller skriva nÃ¥gon konstig copyright-text. Bytte dock till h3.
 
-Slogan borde flyttas från <footer> till innehåller under rubriken About istället. Du bör inte använda <h1> till slogan. Som alternativ kan du istället använda <p> tillsammans med <strong> eller endast <h3>. 
-Gillar att slogan ligger längst ner i footern. Kändes onödigt att upprepa företagets adress där eller skriva någon konstig copyright-text. Bytte dock till h3.
+- <b>Information om fÃ¶retaget kan man lÃ¤gga in i en p-tag istÃ¤llet fÃ¶r h2. h2 passar jÃ¤ttebra fÃ¶r namn pÃ¥ de olika rubrikerna.</b> 
+	- Fixat!
 
-Information om företaget kan man lägga in i en <p> tag istället för <h2>. <h2> passar jättebra för namn på de olika rubrikerna. 
-Fixat!
+- <b>Det skulle passa bÃ¤st om du anvÃ¤nder li till tabellen med priser istÃ¤llet fÃ¶r p-taggar.</b>
+	- Fixat!
 
-Det skulle passa bäst om du använder <li> till tabellen med priser istället för <p> taggar. 
-Fixat!
+- <b>Det ska vara bra om du anvÃ¤nder button fÃ¶r knappar istÃ¤llet fÃ¶r p-taggar i Pris rubriken.</b>
+	- Fixat!
 
-Det ska vara bra om du använder <button> för knappar istället för <p> taggar i Pris rubriken. 
-Fixat!
+- <b>InputfÃ¤lten input type="submit"  i rubriken Contact saknar value="Submit".</b>
+	- Fixat!
 
-Inputfälten <input type="submit">  i rubriken Contact saknar value="Submit". 
-Fixat!
+- <b>Priset fÃ¶r alternativet lÃ¤ngst till hÃ¶ger Ã¤r ojÃ¤mnt jÃ¤mfÃ¶rt de andra tvÃ¥ alternativen. Det skulle se bÃ¤ttre ut om dessa lÃ¥g pÃ¥ samma rad.</b>
+	- Detta kunde jag fÃ¶r mitt liv inte fixa. SÃ¥ det fÃ¥r ligga kvar som det Ã¤r.
 
-Priset för alternativet längst till höger är ojämnt jämfört de andra två alternativen. Det skulle se bättre ut om dessa låg på samma rad. 
-Detta kunde jag för mitt liv inte fixa. Så det får ligga kvar som det är.
+- <b>Det Ã¤r bÃ¤ttre att lÃ¤gga rubriker som About,Themes och Pricing i section och deras smÃ¥ underrubriker i article istÃ¤llet.</b> 
+	- FÃ¶rstÃ¥r! Men jag fÃ¶ljde exemplet hÃ¶gts upp pÃ¥ denna sida: https://www.w3schools.com/tags/tag_section.asp. SÃ¥ jag tror att det gÃ¥r att anvÃ¤nda section-taggen pÃ¥ det sÃ¤ttet som jag gjort.
 
-Det är bättre att lägga rubriker som About,Themes och Pricing i <section> och  deras små underrubriker i <article> istället. 
-Förstår! Men jag följde exemplet högts upp på denna sida: https://www.w3schools.com/tags/tag_section.asp. Så jag tror att det går att använda <section> på det sättet som jag gjort.
+- <b>Det Ã¤r bÃ¤ttre att lÃ¤gga in contact information(adressen,mail, sitemap,twitter och facebook) i footer istÃ¤llet. HÃ¤r finns en bra lÃ¤nk https://www.w3schools.com/tags/tag_footer.asp</b>
+	- Jag valde att lÃ¤gga kontaktinfo bredvid kontaktformulÃ¤ret istÃ¤llet och ville inte upprepa samma info igen i footer. 
 
-Det är bättre att lägga in contact information(adressen,mail, sitemap,twitter och facebook) i <footer> istället. Här finns en bra länk https://www.w3schools.com/tags/tag_footer.asp 
-Jag valde att lägga kontaktinfo bredvid kontaktformuläret istället och ville inte upprepa samma info igen i footer. 
+- <b>Det finns upprepande av egenskaper i CSS: color: #49654C; Det gÃ¥r att anvÃ¤nda sig av variabler fÃ¶r att Ã¥teranvÃ¤nda kod i CSS: 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables</b>
+	- KÃ¤nner till det, men i det hÃ¤r fallet anvÃ¤nds bara 4 fÃ¤rger. SÃ¥ tyckte inte det var nÃ¶dvÃ¤ndigt.
 
-Det finns upprepande av egenskaper i CSS: color: #49654C; Det går att använda sig av variabler för att återanvända kod i CSS: 
-https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables 
-Känner till det, men i det här fallet används bara 4 färger. Så tyckte inte det var nödvändigt.
-
-Använd större marginaler mellan de olika rubrikerna 
-Använd större padding för att göra känslan av sidan luftigare  
-Har ökat padding och margin något.
+- <b>AnvÃ¤nd stÃ¶rre marginaler mellan de olika rubrikerna 
+- AnvÃ¤nd stÃ¶rre padding fÃ¶r att gÃ¶ra kÃ¤nslan av sidan luftigare</b>  
+	- Har Ã¶kat padding och margin nÃ¥got.
