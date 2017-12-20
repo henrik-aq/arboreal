@@ -13,7 +13,10 @@ Det är inte perfekt ännu men det fungerar delvis. Lyckades få texten att skala o
 är "best practice".
 Lade till kommentarer till min CSS som närmare förklarar de olika delarna.
 
-Valde brytpunkt i media queries vid 768px som verkar vara vanligt vid användande av en iPad. Tanken med hela designen från början var som sagt att inte behöva massa media queries utan att behöva ändra så lite som möjligt.
+Valde brytpunkt i media queries vid 768px som verkar vara vanligt vid användande av en iPad.
+Tanken med hela designen från början var som sagt att inte behöva massa media queries utan att behöva ändra så lite som möjligt.
+Jag skulle säga att min sida mest liknar Column Drop på http://bradfrost.github.io/this-is-responsive/patterns.html.
+Där jag har 3 kolumner som går från att ligga brevid varandra till att med media queries hamna på varandra.
 
 <br>
 <b>Validerade HTML och CSS och fick inga fel.</b>
