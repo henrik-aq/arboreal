@@ -15,6 +15,7 @@ body{
     align-items: center;
 }
 
+
 /* Gör att loggan blir mindre när storlek på skärm ändas */
 .logo-img {
     height: 7vh;
@@ -77,17 +78,19 @@ och trycks ihop så får den växa.*/
     padding: 0.3vw;
 }
 
+
 /* Första avdelningen "themes"*/
 .themes{
     flex: 1;
     width: 100%;
-    min-height: 65vh;
+    min-height: 55vh;
     background-color: #C0CEB2;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 
 /* Stylar p-elementen i "themes" */
 .themes p{
@@ -109,23 +112,26 @@ Alphakanalen ger lite genomskinlighet (0.65)*/
 .content {
     display: flex;
     flex: 1;
-    margin: 1vh;
     margin: 1vw;
+    background-color: rgb(255, 255, 255); /*Fall back*/
     background-color: rgba(255,255,255,0.65);
     border-radius: 0.5em;
     flex-direction: column;
-    padding: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
-
 
 .pricing{
     display: flex;
     flex: 1;
     width: 100%;
-    min-height: 65vh;
+    min-height: 60vh;
     background-color: #8AA989;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pricing h2{
@@ -135,25 +141,30 @@ Alphakanalen ger lite genomskinlighet (0.65)*/
     border-color: #8AA989;
 }
 
-.pricing p {
+.pricing li {
     color: #49654C;
     font-size: calc(13px + 0.6vw);
+    padding-bottom: 1vh;
 }
-
 /* Stylar prisuppgiften */
 .pricing-btn {
     background-color: #EBEBE9;
     padding: 0.1vw;
     text-align: center;
+    color: #49654C;
+    font-size: calc(13px + 0.6vw);
+    border: hidden;
 }
 
 .contact{
     display: flex;
     flex: 1;
     width: 100%;
-    min-height: 65vh;
+    min-height: 55vh;
     background-color: #49654C;
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;    
 }
 
 .contact h2{
@@ -225,6 +236,17 @@ så fick ge den egen styling.*/
     height: 48px;
 }
 
+.header-text {
+    width: 100%;
+    text-align: center;
+}
+
+.header-text h2 {
+    color: #EBEBE9;
+    font-size: calc(16px + 1vw)
+    
+}
+
 footer {
     height: 10vh;
     display: flex;
@@ -232,8 +254,22 @@ footer {
     align-items: center;
 }
 
-footer h1{
-    font-size: calc(15px + 0.8vw);
+footer h3{
+    font-size: calc(13px + 0.6vw);
     font-style: italic;
     color: #49654C;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .themes{
+        flex-direction: column;
+    }
+    .pricing {
+        flex-direction: column;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    
 }
